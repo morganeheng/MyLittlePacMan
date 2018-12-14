@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PacMan" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PacMan" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="SFML-2.4.2/include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-audio-d" />
+					<Add library="sfml-network-d" />
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+					<Add directory="SFML-2.4.2/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PacMan" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add directory="SFML-2.4.2/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-audio" />
+					<Add library="sfml-network" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add directory="SFML-2.4.2/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="AbstractEntity.cpp" />
+		<Unit filename="AbstractEntity.hh" />
+		<Unit filename="Bonus.cpp" />
+		<Unit filename="Bonus.hh" />
+		<Unit filename="Character.cpp" />
+		<Unit filename="Character.hh" />
+		<Unit filename="CharacterFactory.cpp" />
+		<Unit filename="CharacterFactory.hh" />
+		<Unit filename="Direction.hh" />
+		<Unit filename="Dot.cpp" />
+		<Unit filename="Dot.hh" />
+		<Unit filename="Ghost.cpp" />
+		<Unit filename="Ghost.hh" />
+		<Unit filename="IObservable.hh" />
+		<Unit filename="IObserver.hh" />
+		<Unit filename="Item.cpp" />
+		<Unit filename="Item.hh" />
+		<Unit filename="ItemFactory.cpp" />
+		<Unit filename="ItemFactory.hh" />
+		<Unit filename="Map.cpp" />
+		<Unit filename="Map.hh" />
+		<Unit filename="Mode.hh" />
+		<Unit filename="PacMan.cpp" />
+		<Unit filename="PacMan.hh" />
+		<Unit filename="ResourcesManager.cpp" />
+		<Unit filename="ResourcesManager.hh" />
+		<Unit filename="Scene.cpp" />
+		<Unit filename="Scene.hh" />
+		<Unit filename="Tile.hh" />
+		<Unit filename="TimeManager.cpp" />
+		<Unit filename="TimeManager.hh" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
